@@ -1,0 +1,43 @@
+/** Store List:
+CeraVE Foaming Facial Cleanser (17, 5, 7)
+Neutrogena Daily Cleanser (11, 3, 8) 
+La Roche-Posay Foaming Cleanser (15, 5, 9)
+Olay Gentle Foaming Cleanser (6, 2, 7)
+Neutrogena Oil Free Acne Wash (10, 3, 8)
+Aveeno Clear Complexion Cleanser (7, 4, 9)
+Clean and Clear Facial Cleanser (9, 4, 7)
+La Roche-Posay Deep Cleansing Cleaner (15, 5, 8)
+Dermalogica Clay Cleanser (39, 5, 9)
+Cetaphil Gentle Skin Cleanser (4, 2, 7)
+Tatcha Rice Wash Cleanser (38, 5, 8)
+Tatcha Gentle Exfoliating Cleanser (39, 5, 9)
+Dermalogica Exfoliant Cleanser (64, 5, 7)
+Fenty Makeup Removing Cleanser (26, 3, 8)
+Tatch Oily Skin Cleanser (39, 5, 9)
+**/
+
+CREATE TABLE everythingSKIN (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, rating INTEGER, aisle INTEGER);
+
+INSERT INTO everythingSKIN VALUES (1, "CeraVE Foaming Facial Cleanser", 17, 5, 7);
+INSERT INTO everythingSKIN VALUES (2, "Neutrogena Daily Cleanser", 11, 3, 8);
+INSERT INTO everythingSKIN VALUES (3, "La Roche-Posay Foaming Cleanser", 15, 5, 9);
+INSERT INTO everythingSKIN VALUES (4, "Olay Gentle Foaming Cleanser", 6, 2, 7);
+INSERT INTO everythingSKIN VALUES (5, "Neutrogena Oil Free Acne Wash", 10, 3, 8);
+INSERT INTO everythingSKIN VALUES (6, "Aveeno Clear Complexion Cleanser", 7, 4, 9);
+INSERT INTO everythingSKIN VALUES (7, "Clean and Clear Facial Cleanser", 9, 4, 7);
+INSERT INTO everythingSKIN VALUES (8, "La Roche-Posay Deep Cleansing Cleaner", 15, 5, 8);
+INSERT INTO everythingSKIN VALUES (9, "Dermologica Clay Cleanser", 39, 5, 9);
+INSERT INTO everythingSKIN VALUES (10, "Cetaphil Gentle Skin Cleanser", 4, 2, 7);
+INSERT INTO everythingSKIN VALUES (11, "Tatcha Rice Wash Cleanser", 38, 5, 8);
+INSERT INTO everythingSKIN VALUES (12, "Tatcha Gentle Exfoliating Cleanser", 39, 5, 9);
+INSERT INTO everythingSKIN VALUES (13, "Dermologica Exfoliant Cleanser", 64, 5, 7);
+INSERT INTO everythingSKIN VALUES (14, "Fenty Makeup Removing Cleanser", 26, 3, 8);
+INSERT INTO everythingSKIN VALUES (15, "Tatcha Oil Skin Cleanser", 39, 5, 9);
+
+--select all from databse.
+SELECT * FROM everythingSKIN;
+
+--select from databse products with a rating of 5 and order by price asc.
+SELECT * FROM everythingSKIN
+WHERE rating =5
+ORDER BY cost asc;
